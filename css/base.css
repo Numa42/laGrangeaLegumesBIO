@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4ffe5;
+    font-family: "Lucida Sans";
+}
+
+header{
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    background-color: #8FD71A;
+}
+
+header h1{
+    font-family: "Kristen ITC";
+    font-size: xx-large;
+}
+
+#right{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+}
+
+.bio{
+    margin-left: 15px;
+    color: #ffffff;
+    background-color: #2db456;
+}
+
+.entreprise{
+    position: relative;
+    background-color: #9fea24;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu {
+    list-style: none;
+    position: absolute;
+    background-color: #f4ffe5;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a li{
+    box-shadow: inset 0 0 0 0 #2db456;
+    color: #000000;
+    background-color: #f4ffe5;
+    font-size: 1.2em;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    &:hover {
+        color: #f4ffe5;
+        box-shadow: inset 300px 0 0 0 #2db456;
+    }
+}
+
+.entreprise:hover + .menu,
+.menu:hover {
+    opacity: 1;
+}
+
+header img{
+    height: 100px;
+}
+
+#ab{
+    height: 60px;
+}
+
+.main{
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    color: #004b06;
+    font-size: x-large;
+}
+
+footer{
+    margin: 0;
+    margin-top: 15px;
+    padding-top: 5px;
+    color: white;
+    background-color: #8FD71A;
+}
+
+footer p{
+    text-align: center;
+}
+
+/*<head>*/
+/*<meta charset="UTF-8">*/
+/*<title>La Grange à Légumes BIO</title>*/
+/*<link rel="stylesheet" href="css/base.css">*/
+/*</head>*/
+/*<body>*/
+/*<header>*/
+/*<a href="acceuil.html">*/
+/*<img src="assets/image/logo.png">*/
+/*</a>*/
+/*<section class="title">*/
+/*<h1>LA GRANGE À LÉGUMES </h1><h1 class="bio">BIO</h1>*/
+/*</section>*/
+/*<section id="right">*/
+/*<nav>*/
+/*<p class="entreprise">L'entreprise</p>*/
+/*<ul class="menu">*/
+/*<a href="presentation.html"><li>Présentation</li></a>*/
+/*<a href="contact.html"><li>Contact</li></a>*/
+/*</ul>*/
+/*</nav>*/
+/*<img src="assets/image/logoAB.jpg" id="ab">*/
+/*</section>*/
+/*</header>*/
+/*</body>*/
+
+/*<footer>*/
+/*<p>Ce site web à été réalisé par Numa Verpillon</p>*/
+/*</footer>*/

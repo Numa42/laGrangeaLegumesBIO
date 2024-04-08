@@ -1,0 +1,23 @@
+h2{
+    font-weight: normal;
+    color: #7ebd17;
+    text-align: center;
+}
+
+.presentation img{
+    width : 45%;
+}
+
+.para{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.para :first-child{
+    padding-right: 5px;
+}
+.para :last-child{
+    padding-left: 5px;
+}
+

@@ -1,0 +1,31 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    color: #7ebd17;
+    font-size: xx-large;
+    text-align: center;
+}
+
+ul{
+    font-size: x-large;
+    list-style: none;
+}
+
+#adresse{
+    font-size: large;
+}
+
+#adresse p{
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+iframe{
+    margin-top: 15px;
+    width: 600px;
+    height: 300px;
+}
