@@ -10,9 +10,14 @@ h2{
     text-align: center;
 }
 
-ul{
+.contacts{
     font-size: x-large;
     list-style: none;
+}
+
+.contacts img{
+    width: 25px;
+    padding-right: 5px;
 }
 
 #adresse{
