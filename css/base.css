@@ -201,7 +201,7 @@ footer p{
         display: block;
     }
 
-    #ab{
+    #ab, #menuClose{
         display: none;
     }
 
