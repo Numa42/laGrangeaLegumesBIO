@@ -145,4 +145,9 @@ footer p{
     }
 }
 
-@media screen and (max-width: 1000px){}
+@media screen and (max-width: 1000px){
+    .main{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
