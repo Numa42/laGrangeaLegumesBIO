@@ -1,4 +1,5 @@
 body{
+    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -7,7 +8,6 @@ body{
 }
 
 header{
-    width: 100%;
     padding: 10px;
     padding-right: 50px;
     padding-left: 50px;
