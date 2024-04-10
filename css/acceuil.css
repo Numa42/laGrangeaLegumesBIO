@@ -10,7 +10,7 @@
 
 h2{
     font-weight: normal;
-    color: black;
+    color: #7ebd17;
 }
 
 p{
@@ -19,7 +19,7 @@ p{
 }
 
 li{
-    list-style-type: none;
+    list-style-type: none;  
 }
 
 .button {
