@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Grange à Légumes BIO</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/acceuil.css">
@@ -16,8 +15,9 @@
             <h1>LA GRANGE À LÉGUMES </h1><h1 class="bio">BIO</h1>
         </section>
         <section id="right">
-            <nav>
-                <img id="menuIcon" src="menuIcon">
+            <img id="menuIcon" src="assets/image/menuIcon.png" onclick="toggleStatus()">
+            <img id="menuClose" src="assets/image/menuClose.png" onclick="toggleStatus()">
+            <nav id="nav">
                 <section id="menu0">
                     <a id="acceuil" href="index.html"><p class="pMenu">Acceuil</p></a>
                 </section>
@@ -71,3 +71,5 @@
         <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>
         <p>Ce site web à été réalisé par Numa Verpillon</p>
     </footer>
+</body>
+<script src="js/base.js"></script>
