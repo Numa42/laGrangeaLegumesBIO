@@ -25,3 +25,29 @@ h2{
 .para :last-child li{
     padding-left: 0  ;
 }
+
+@media screen and (max-width: 1250px){
+    .para{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .para {
+        flex-direction: column;
+    }
+    .presentation img {
+        width: 100%;
+    }
+}

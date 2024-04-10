@@ -22,7 +22,6 @@ header h1{
 }
 
 #right{
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +37,12 @@ header h1{
     background-color: #2db456;
 }
 
-.entreprise{
+nav{
+    display: flex;
+    padding-right: 40px;
+}
+
+.pMenu{
     position: relative;
     background-color: #9fea24;
     font-size: 1.2em;
@@ -46,6 +50,18 @@ header h1{
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+#acceuil{
+    text-decoration: none;
+}
+
+#menu0{
+    padding-right: 8px;
+}
+
+#menu1{
+    padding-right: 8px;
 }
 
 .menu {
@@ -77,7 +93,7 @@ header h1{
     }
 }
 
-.entreprise:hover + .menu,
+.pMenu:hover + .menu,
 .menu:hover {
     opacity: 1;
 }
@@ -113,32 +129,20 @@ footer p{
     text-align: center;
 }
 
-/*<head>*/
-/*<meta charset="UTF-8">*/
-/*<title>La Grange à Légumes BIO</title>*/
-/*<link rel="stylesheet" href="css/base.css">*/
-/*</head>*/
-/*<body>*/
-/*<header>*/
-/*<a href="acceuil.html">*/
-/*<img src="assets/image/logo.png">*/
-/*</a>*/
-/*<section class="title">*/
-/*<h1>LA GRANGE À LÉGUMES </h1><h1 class="bio">BIO</h1>*/
-/*</section>*/
-/*<section id="right">*/
-/*<nav>*/
-/*<p class="entreprise">L'entreprise</p>*/
-/*<ul class="menu">*/
-/*<a href="presentation.html"><li>Présentation</li></a>*/
-/*<a href="contact.html"><li>Contact</li></a>*/
-/*</ul>*/
-/*</nav>*/
-/*<img src="assets/image/logoAB.jpg" id="ab">*/
-/*</section>*/
-/*</header>*/
-/*</body>*/
+@media screen and (max-width: 1250px){
+    header{
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    header img {
+        height: 60px;
+    }
+    header h1{
+        font-size: x-large;
+    }
+    nav{
+        padding-right: 15px;
+    }
+}
 
-/*<footer>*/
-/*<p>Ce site web à été réalisé par Numa Verpillon</p>*/
-/*</footer>*/
+@media screen and (max-width: 1000px){}
