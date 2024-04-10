@@ -4,14 +4,14 @@ h2{
     text-align: center;
 }
 
-.presentation img{
-    width : 45%;
-}
-
 .para{
     margin-top: 10px;
     display: flex;
     align-items: center;
+}
+
+.contenu{
+    width: 60%;
 }
 
 .para :first-child{
@@ -26,28 +26,40 @@ h2{
     padding-left: 0  ;
 }
 
+.presentation img{
+    width : 45%;
+}
+
 @media screen and (max-width: 1250px){
     .para{
         font-size: large;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .main {
-        margin-left: 40px;
-        margin-right: 40px;
+@media screen and (max-width: 1000px){
+    .main{
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .main {
-        margin-left: 0;
-        margin-right: 0;
-    }
+@media screen and (max-width: 750px){
     .para {
         flex-direction: column;
     }
+    .para :first-child {
+        padding-right: 0;
+    }
+    .para :last-child {
+        padding-left: 0;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
     .presentation img {
+        width: 100%;
+    }
+    .contenu {
         width: 100%;
     }
 }
