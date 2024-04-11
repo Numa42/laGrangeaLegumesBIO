@@ -1,7 +1,6 @@
 {
-  "name": "La Grange à Légumes BIO",
+  "name": "lgalb",
   "description": "Site web",
   "type": "project",
-  "license": "Numa Verpillon",
-  "require": {}
+  "license": "Numa Verpillon"
 }

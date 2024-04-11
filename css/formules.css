@@ -5,7 +5,7 @@ main{
 
 .mainSection{
     text-align: center;
-    width: 60%;
+    width: 64%;
 }
 
 h2{
@@ -29,7 +29,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28%;
+    width: 25%;
     /*border: 2px solid #ccc;*/
     border-radius: 10px;
     padding: 20px;
@@ -98,5 +98,55 @@ button {
         &:before {
             width: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .mainSection {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mainSection {
+        width: 90%;
+    }
+
+    .formule{
+        width: 24%;
+    }
+
+    .prixContent {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prix {
+        font-size: xx-large;
+    }
+
+    .euro{
+        font-size: large;
+    }
+    .prixContent {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h3 {
+        font-size: large;
+    }
+    .formule{
+        width: 20%;
+    }
+    .prix{
+        font-size: x-large;
+        padding-right: 4px;
+        letter-spacing: -2px;
+    }
+    .euro {
+        font-size: medium;
     }
 }
