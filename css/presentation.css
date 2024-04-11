@@ -5,6 +5,7 @@ h2{
 }
 
 .para{
+    font-size: larger;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -32,7 +33,7 @@ h2{
 
 @media screen and (max-width: 1250px){
     .para{
-        font-size: large;
+        font-size: medium;
     }
 }
 
