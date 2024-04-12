@@ -50,7 +50,28 @@ $bd = maBD::getInstance();
     </section>
 </header>
 <main>
-
+    <form method="post">
+        <div id="connect">
+            <section class="input">
+                <label for="id"></label>
+                <input type="text" id="id" name="login" placeholder="Nom d'utilisateur" required>
+            </section>
+            <section class="input">
+                <label for="psw"></label>
+                <input type="password" id="psw" name="password" placeholder="Mot de passe" required>
+            </section>
+            <?php
+            // Affichage du message d'erreur si les identifiants sont incorrects
+            if (isset($_POST['log'])) {
+                if ($_POST['log']) {
+                    echo "<p class='erreur'>Identifiants incorrects.</p>";
+                }
+            }
+            ?>
+        </div>
+        <!-- Bouton de soumission du formulaire -->
+        <input class="send" type="submit" value="Connexion" name="log[]">
+    </form>
 
 </main>
 <footer>
