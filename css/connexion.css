@@ -5,7 +5,7 @@ main{
 }
 
 h2{
-    color: #854f00;
+    color: #f4ffe5;
     margin-top: 0;
 }
 
@@ -15,4 +15,49 @@ form{
     padding-left: 40px;
     padding-right: 40px;
     background-color: #9fea24;
+}
+
+#connect{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#connect .erreur{
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    height: 5vh;
+    background-color: white;
+    border: #3D8CE9 2px solid ;
+    border-radius: 3vh;
+}
+
+
+.input input{
+    width: 35vw;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input::placeholder{
+    color: #999999;
+}
+
+.send {
+    background-color: #3D8CE9;
+    width: 30%;
+    padding: 2vh;
+    border: solid white 2px;
+    border-radius: 4vh;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
