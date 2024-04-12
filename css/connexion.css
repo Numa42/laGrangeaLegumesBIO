@@ -5,10 +5,12 @@ main{
 }
 
 h2{
-    color: black;
+    color: #854f00;
+    margin-top: 0;
 }
 
 form{
+    margin-top: 15px;
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;

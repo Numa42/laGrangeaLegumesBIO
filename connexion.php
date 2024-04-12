@@ -53,7 +53,7 @@ $bd = maBD::getInstance();
 </header>
 <main>
     <form method="post">
-        <h2>Connexion</h2>
+        <h2>CONNEXION</h2>
         <div id="connect">
             <section class="input">
                 <label for="id"></label>
