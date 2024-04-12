@@ -8,7 +8,7 @@ class maBD
     static function getInstance(): PDO
     {
         // Informations de connexion à la base de données
-        $dsn = "mysql:host=srv1270.hstgr.io;dbname=Gestion;charset=utf8";
+        $dsn = "mysql:host=localhost;dbname=Gestion;charset=utf8";
         $username = "Admin";
         $password = "Admini42";
 
