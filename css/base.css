@@ -2,7 +2,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: #f4ffe5;
+    background-color: #f4fcd8;
     font-family: "Lucida Sans";
 }
 
@@ -117,8 +117,14 @@ header img{
     padding-right: 40px;
     display: flex;
     flex-direction: column;
-    color: #466027;
+    color: #2a410f;
     font-size: x-large;
+}
+
+h2{
+    color: #7ebd17;
+    font-size: xx-large;
+    text-align: center;
 }
 
 footer{
