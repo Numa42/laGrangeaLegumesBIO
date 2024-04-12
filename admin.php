@@ -1,8 +1,12 @@
 <?php
-use classes\maBD;
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include './vendor/autoload.php';
 
 // Obtenir l'instance de la base de données
-$bd = new maBD();
+echo "<p>feur</p>";
+$bd = maBD::getInstance();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,5 +58,4 @@ $bd = new maBD();
     <p>Ce site web à été réalisé par Numa Verpillon</p>
 </footer>
 </body>
-<script src="js/base.js"></script>
 </html>

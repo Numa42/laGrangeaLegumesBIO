@@ -1,7 +1,5 @@
 <?php
 
-namespace classes;
-
 class maBD
 {
     static private $pdo = null; // Le singleton
@@ -10,8 +8,8 @@ class maBD
     static function getInstance(): PDO
     {
         // Informations de connexion à la base de données
-        $dsn = "mysql:host=localhost;dbname=u953514786_Gestion;charset=utf8";
-        $username = "u953514786_Admin";
+        $dsn = "mysql:host=srv1270.hstgr.io;dbname=Gestion;charset=utf8";
+        $username = "Admin";
         $password = "Admini42";
 
         // Si la connexion n'a pas encore été établie, on la crée

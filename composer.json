@@ -1,6 +1,11 @@
 {
-  "name": "lgalb",
+  "name": "lgalb/lagrangealegumesbio",
   "description": "Site web",
   "type": "project",
-  "license": "Numa Verpillon"
+  "license": "Numa Verpillon",
+  "autoload": {
+    "classmap": [
+      "classes/"
+    ]
+  }
 }
