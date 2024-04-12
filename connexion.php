@@ -51,10 +51,12 @@ $bd = maBD::getInstance();
 </header>
 <main>
 
+
 </main>
 <footer>
     <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>
     <p>Ce site web à été réalisé par Numa Verpillon</p>
 </footer>
 </body>
+<script src="js/base.js"></script>
 </html>
