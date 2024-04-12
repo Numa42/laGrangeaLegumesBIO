@@ -12,6 +12,7 @@ $bd = maBD::getInstance();
 <head>
     <meta charset="UTF-8">
     <title>La Grange à Légumes BIO</title>
+    <link rel="icon" href="assets/image/icon.png">
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
