@@ -76,7 +76,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         <?php
         $produits = $produitDAO->getAll();
             foreach (array_keys($produits) as $p){
-                $produit = Produit($p);
+                $produit = new Produit($p);
                 $produit->toTable();
             }
         ?>
