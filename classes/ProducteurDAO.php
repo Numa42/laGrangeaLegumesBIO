@@ -9,7 +9,7 @@ class ProducteurDAO extends DAO
         $stmt = $this->pdo->prepare("SELECT * FROM Producteur WHERE id_producteur=?");
         $stmt->execute([$id]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        return new Produit($row);
+        return new Producteur($row);
 
     }
 
