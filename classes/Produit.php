@@ -12,10 +12,12 @@ class Produit
         $this->unite = $f["unite"];
     }
     public function toTable(){
+        $producteurDAO = new ProducteurDAO(MaBD::getInstance());
+
         echo "<tr>
             <td>".$this->nom."</td>
             <td>".$this->type."</td>
-            <td>".$this->source."</td>
+            <td>".$producteurDAO->getOne($this->source)->nom."</td>
             <td>".$this->prix.$this->unite."</td>
         </tr>";
     }
