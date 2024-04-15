@@ -28,9 +28,12 @@ table{
 }
 
 table, th, td{
+    font-size: large;
     border: #787878 2px solid;
 }
 
 td{
-    padding: 5px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
