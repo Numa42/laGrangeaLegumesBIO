@@ -4,6 +4,10 @@ main{
     align-items: center;
 }
 
+p .bio{
+    margin: 0;
+}
+
 #headTarifs{
     display: flex;
     flex-direction: column;
