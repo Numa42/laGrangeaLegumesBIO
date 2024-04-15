@@ -54,7 +54,9 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         <h2>TARIFS LÉGUMES</h2>
         <p>Mis à jour le 15/04/2024</p>
     </section>
-    <p>Les légumes ci-dessous sont évidemment tous <div class="bio">BIO</div> !</p>
+    <div>
+        <p>Les légumes ci-dessous sont évidemment tous <div class="bio">BIO</div> !</p>
+    </div>
     <table>
         <tr class="thead">
             <td>Nom</td>
