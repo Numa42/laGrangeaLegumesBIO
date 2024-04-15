@@ -57,7 +57,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
     <table>
         <tr class="thead">
             <td>Nom</td>
-            <td>Désignation</td>
+            <td>Type</td>
             <td>Producteur</td>
             <td>Prix</td>
         </tr>
