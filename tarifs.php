@@ -61,18 +61,6 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
             <td>Producteur</td>
             <td>Prix</td>
         </tr>
-        <tr>
-            <td>Tomates F1</td>
-            <td></td>
-            <td>La Grange à Légumes BIO</td>
-            <td>3,60€/kg</td>
-        </tr>
-        <tr>
-            <td>Tomates cerise</td>
-            <td></td>
-            <td>La Grange à Légumes BIO</td>
-            <td>8,80€/kg</td>
-        </tr>
         <?php
         $produits = $produitDAO->getAll();
             foreach (array_keys($produits) as $p){
