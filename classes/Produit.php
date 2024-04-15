@@ -6,10 +6,10 @@ class Produit
     public function __construct(array $f){
         $this->id = $f["code_produit"];
         $this->nom = $f["nom_produit"];
-        $this->type = $f[2];
-        $this->source = $f[3];
-        $this->prix = $f[4];
-        $this->unite = $f[5];
+        $this->type = $f["type_produit"];
+        $this->source = $f["source"];
+        $this->prix = $f["prix_unitaire"];
+        $this->unite = $f["unite"];
     }
     public function toTable(){
         echo "<tr>
