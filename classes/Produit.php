@@ -3,7 +3,7 @@
 class Produit
 {
     protected $field;
-    public function __construct(array $f){
+    public function __construct(int $f){
         $this->field = $f;
     }
     public function toTable(){
