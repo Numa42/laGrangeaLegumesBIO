@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 include './vendor/autoload.php';
 
 // Obtenir l'instance de la base de données
-$bd = maBD::getInstance();
+$bd = MaBD::getInstance();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -57,24 +57,25 @@ $bd = maBD::getInstance();
     <table>
         <tr class="thead">
             <td>Nom</td>
+            <td>Désignation</td>
             <td>Producteur</td>
             <td>Prix</td>
-            <td>Détails</td>
         </tr>
         <tr>
             <td>Tomates F1</td>
+            <td></td>
             <td>La Grange à Légumes BIO</td>
             <td>3,60€/kg</td>
-            <td></td>
         </tr>
         <tr>
             <td>Tomates cerise</td>
+            <td></td>
             <td>La Grange à Légumes BIO</td>
             <td>8,80€/kg</td>
-            <td>barquette
-                250g : 2,10€
-                500g : 4,10€</td>
         </tr>
+        <?php
+
+        ?>
     </table>
     <h4>En cours de développement</h4>
 </main>

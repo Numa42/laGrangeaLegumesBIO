@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 include './vendor/autoload.php';
 
 // Obtenir l'instance de la base de données
-$bd = maBD::getInstance();
+$bd = MaBD::getInstance();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
