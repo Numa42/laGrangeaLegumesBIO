@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 include './vendor/autoload.php';
 
 // Obtenir l'instance de la base de données
-$bd = MaBD::getInstance();
+$produitDAO = new ProduitDAO(MaBD::getInstance());
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -74,7 +74,11 @@ $bd = MaBD::getInstance();
             <td>8,80€/kg</td>
         </tr>
         <?php
-
+        $produits = $produitDAO->getAll();
+            foreach (array_keys($produits) as $p){
+                $produit = Produit($p);
+                $produit->toTable();
+            }
         ?>
     </table>
     <h4>En cours de développement</h4>

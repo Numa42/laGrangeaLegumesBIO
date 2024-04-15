@@ -8,6 +8,6 @@ class Produit
     }
     public function toTable(){
         $oui =  implode(" | ", $this->fields);
-        echo "<p>".$oui."</p>";
+        echo "<tr><td>".$oui."</td></tr>";
     }
 }

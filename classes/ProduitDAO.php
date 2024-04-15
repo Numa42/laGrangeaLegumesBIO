@@ -1,6 +1,6 @@
 <?php
 
-class produitDAO extends DAO
+class ProduitDAO extends DAO
 {
 
     public function getOne(int $id): ?object
