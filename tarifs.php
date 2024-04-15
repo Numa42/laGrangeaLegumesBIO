@@ -54,10 +54,10 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         <h2>TARIFS LÉGUMES</h2>
         <p>Mis à jour le 15/04/2024</p>
     </section>
+    <h4>Les légumes ci-dessous sont évidemment tous <div class="bio">BIO</div> !</h4>
     <table>
         <tr class="thead">
             <td>Nom</td>
-            <td>Type</td>
             <td>Producteur</td>
             <td>Prix</td>
         </tr>
@@ -69,7 +69,6 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
             }
         ?>
     </table>
-    <h4>En cours de développement</h4>
 </main>
 <footer>
     <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>
