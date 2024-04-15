@@ -78,3 +78,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
 </body>
 <script src="js/base.js"></script>
 </html>
+
+<!--TODO-->
+<!--Indiquation BIO-->
+<!--Type passe dans le nom-->

@@ -17,7 +17,7 @@ class Produit
         echo "<tr>
             <td>".$this->nom."</td>
             <td>".$this->type."</td>
-            <td>".$producteurDAO->getOne($this->source)->nom."</td>
+            <td>".$this->source."</td>
             <td>".$this->prix.$this->unite."</td>
         </tr>";
     }
