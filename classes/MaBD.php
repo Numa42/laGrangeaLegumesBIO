@@ -1,6 +1,6 @@
 <?php
 
-class maBD
+class MaBD
 {
     static private $pdo = null; // Le singleton
 
