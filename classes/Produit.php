@@ -8,7 +8,7 @@ class Produit
         $this->nom = $f["nom_produit"];
         $this->type = $f["type_produit"];
         $this->source = $f["source"];
-        $this->prix = $f["prix_unitaire"];
+        $this->prix = $f["prix"];
         $this->unite = $f["unite"];
     }
     public function toTable(){
