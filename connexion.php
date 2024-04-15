@@ -40,11 +40,11 @@ $bd = maBD::getInstance();
                 </ul>
             </section>
             <section id="menu2">
-                <p id="vente" class="pMenu">Vente</p>
+                <p id="vente" class="pMenu">Paniers</p>
                 <ul id="menuVente" class="menu">
                     <a href="formules.html"><li>Formules</li></a>
                     <a href="conditionsVente.html"><li>Conditions de ventes</li></a>
-                    <a href="tarifs.html"><li>Tarifs légumes</li></a>
+                    <a href="tarifs.php"><li>Tarifs légumes</li></a>
                 </ul>
             </section>
         </nav>
@@ -72,7 +72,7 @@ $bd = maBD::getInstance();
             }
             ?>
         </div>
-        <input class="send" type="submit" value="Connexion" name="log[]">
+        <input class="send" type="submit" value="CONNEXION" name="log[]">
     </form>
 
 </main>

@@ -1,3 +1,12 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include './vendor/autoload.php';
+
+// Obtenir l'instance de la base de données
+$bd = maBD::getInstance();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,6 +14,7 @@
     <title>La Grange à Légumes BIO</title>
     <link rel="icon" href="assets/image/icon.png">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/tarifs.css">
 </head>
 <body>
 <header>
@@ -28,7 +38,7 @@
                 </ul>
             </section>
             <section id="menu2">
-                <p id="vente" class="pMenu">Vente</p>
+                <p id="vente" class="pMenu">Paniers</p>
                 <ul id="menuVente" class="menu">
                     <a href="formules.html"><li>Formules</li></a>
                     <a href="conditionsVente.html"><li>Conditions de ventes</li></a>
@@ -40,6 +50,32 @@
     </section>
 </header>
 <main>
+    <section id="headTarifs">
+        <h2>TARIFS LÉGUMES</h2>
+        <p>Mis à jour le 15/04/2024</p>
+    </section>
+    <table>
+        <tr class="thead">
+            <td>Nom</td>
+            <td>Producteur</td>
+            <td>Prix</td>
+            <td>Détails</td>
+        </tr>
+        <tr>
+            <td>Tomates F1</td>
+            <td>La Grange à Légumes BIO</td>
+            <td>3,60€/kg</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Tomates cerise</td>
+            <td>La Grange à Légumes BIO</td>
+            <td>8,80€/kg</td>
+            <td>barquette
+                250g : 2,10€
+                500g : 4,10€</td>
+        </tr>
+    </table>
     <h4>En cours de développement</h4>
 </main>
 <footer>

@@ -1,11 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-include './vendor/autoload.php';
-
-// Obtenir l'instance de la base de données
-$bd = maBD::getInstance();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -52,10 +45,12 @@ $bd = maBD::getInstance();
 </header>
 <main>
 
+
 </main>
 <footer>
     <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>
     <p>Ce site web à été réalisé par Numa Verpillon</p>
 </footer>
 </body>
+<script src="js/base.js"></script>
 </html>

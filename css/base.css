@@ -151,7 +151,7 @@ footer p{
     header h1{
         font-size: x-large;
     }
-    .pMenu{
+    .pMenu, .menu a li {
         font-size: 1em;
     }
     nav{
