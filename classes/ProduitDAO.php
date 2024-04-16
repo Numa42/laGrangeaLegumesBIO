@@ -6,7 +6,7 @@ class ProduitDAO extends DAO
     public function getOne(int $id): ?object
     {
         // Utilisation d'une requête préparée pour éviter les failles SQL et sécuriser la récupération des données
-        $stmt = $this->pdo->prepare("SELECT * FROM Produit WHERE code_produit=?");
+        $stmt = $this->pdo->prepare("SELECT * FROM Produit WHERE id_produit=?");
         $stmt->execute([$id]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         return new Produit($row);
@@ -16,7 +16,7 @@ class ProduitDAO extends DAO
     public function getAll(): array
     {
         $res = array();
-        $stmt = $this->pdo->query("SELECT * FROM Produit ORDER BY code_produit");
+        $stmt = $this->pdo->query("SELECT * FROM Produit ORDER BY id_produit");
         foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row)
             $res[] = $row;
         return $res;

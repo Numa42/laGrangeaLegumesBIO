@@ -2,9 +2,10 @@
 
 class Produit
 {
-    protected $id, $nom, $type, $source, $prix, $unite;
+    protected $id, $code, $nom, $type, $source, $prix, $unite;
     public function __construct(array $f){
-        $this->id = $f["code_produit"];
+        $this->id = $f["id_produit"];
+        $this->code = $f["code_balance"];
         $this->nom = $f["nom_produit"];
         $this->type = $f["type_produit"];
         $this->source = $f["source"];
