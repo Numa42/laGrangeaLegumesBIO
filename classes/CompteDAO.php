@@ -35,9 +35,9 @@ class CompteDAO extends DAO
         echo "<alt>".$login." - ".$mdp."</alt>";
         $stmt = $this->pdo->prepare("SELECT identifiant FROM Utilisateur WHERE identifiant = '$login' AND mot_de_passe = SHA1('$mdp')");
         $stmt->execute();
-        echo "<alt>".$stmt->num_rows."</alt>";
+        echo "<alt>".$stmt->rowCount()."</alt>";
 
-        if ($stmt->num_rows > 0) {
+        if ($stmt->rowCount() > 0) {
             // Authentification réussie
             echo "<p>Réussi</p>";
             return $this->getOne($login);
