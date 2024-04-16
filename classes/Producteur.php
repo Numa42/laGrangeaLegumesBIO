@@ -2,7 +2,7 @@
 
 class Producteur
 {
-    public $id_producteur, $nom_producteur, $lien;
+    public $id, $nom, $lien;
 
     public function __construct(array $f)
     {

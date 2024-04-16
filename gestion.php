@@ -3,20 +3,11 @@ include './vendor/autoload.php';
 
 session_start();
 
-$compteDAO = new CompteDAO(MaBD::getInstance());
-
-if (isset($_POST['log'])) {
-    $login = $_POST['login'];
-    $mdp = $_POST['password'];
-
-    // Vérification des identifiants avec la méthode check de CompteDAO
-    $compte = $compteDAO->check($login, $mdp);
-
-    if ($compte!==null){
-        $_SESSION['user'] = $login; // Stocker l'identifiant de l'utilisateur dans la session
-        header("Location: gestion.php");
-        exit;
-    }
+// Vérifier si l'utilisateur est déjà connecté
+if(!isset($_SESSION['user'])) {
+    // Rediriger vers la page protégée
+    header("Location: admin.php");
+    exit;
 }
 
 ?>
@@ -65,10 +56,12 @@ if (isset($_POST['log'])) {
 </header>
 <main>
 
+
 </main>
 <footer>
     <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>
     <p>Ce site web à été réalisé par Numa Verpillon</p>
 </footer>
 </body>
+<script src="js/base.js"></script>
 </html>
