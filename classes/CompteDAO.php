@@ -14,6 +14,7 @@ class CompteDAO extends DAO
     {
         $res = array();
         $stmt = $this->pdo->prepare("SELECT * FROM Utilisateur");
+        $stmt->execute();
         foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row)
             $res[] = $row;
         return $res;
@@ -33,6 +34,7 @@ class CompteDAO extends DAO
         // Vérifier les informations d'identification dans la base de données
         echo "<alt>".$login." - ".$mdp."</alt>";
         $stmt = $this->pdo->prepare("SELECT identifiant FROM Utilisateur WHERE identifiant = '$login' AND mot_de_passe = SHA1('$mdp')");
+        $stmt->execute();
         echo "<alt>".$stmt->num_rows."</alt>";
 
         if ($stmt->num_rows > 0) {
