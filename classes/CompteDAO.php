@@ -32,18 +32,14 @@ class CompteDAO extends DAO
 
     public function check($login, $mdp){
         // Vérifier les informations d'identification dans la base de données
-        echo "<alt>".$login." - ".$mdp."</alt>";
         $stmt = $this->pdo->prepare("SELECT identifiant FROM Utilisateur WHERE identifiant = '$login' AND mot_de_passe = SHA1('$mdp')");
         $stmt->execute();
-        echo "<alt>".$stmt->rowCount()."</alt>";
 
         if ($stmt->rowCount() > 0) {
             // Authentification réussie
-            echo "<p>Réussi</p>";
             return $this->getOne($login);
         } else {
             // Authentification échouée
-            echo "<p>Echec</p>";
             return null;
         }
     }
