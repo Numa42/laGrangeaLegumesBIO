@@ -6,7 +6,7 @@ session_start();
 // Vérifier si l'utilisateur est déjà connecté
 if(!isset($_SESSION['user'])) {
     // Rediriger vers la page protégée
-    header("Location: admin.php");
+    header("Location: connexion.php");
     exit;
 }
 
