@@ -1,11 +1,11 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 include './vendor/autoload.php';
 
-// Obtenir l'instance de la base de données
-$bd = MaBD::getInstance();
+session_start();
+
+$compteDAO = new CompteDAO(MaBD::getInstance());
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -64,10 +64,19 @@ $bd = MaBD::getInstance();
                 <input type="password" id="psw" name="password" placeholder="Mot de passe" required>
             </section>
             <?php
-            // Affichage du message d'erreur si les identifiants sont incorrects
             if (isset($_POST['log'])) {
-                if ($_POST['log']) {
-                    echo "<p class='erreur'>Identifiants incorrects.</p>";
+                $login = $_POST['login'];
+                $mdp = $_POST['password'];
+
+                // Vérification des identifiants avec la méthode check de CompteDAO
+                $compte = $compteDAO->check($login, $mdp);
+
+                if ($compte!==null){
+                    $_SESSION['user'] = $login; // Stocker l'identifiant de l'utilisateur dans la session
+                    header("Location: gestion.php");
+                    exit;
+                }else{
+                    echo "<p class='erreur'>Identifiants ou mot de passe incorrects</p>";
                 }
             }
             ?>
