@@ -55,7 +55,7 @@ if(!isset($_SESSION['user'])) {
     </section>
 </header>
 <main>
-    <h2>Pannel de <?php $_SESSION['user'] ?></h2>
+    <h2>Pannel de <?php echo $_SESSION['user'] ?></h2>
     <button>Tarifs légumes</button>
     <button>Gestion factures</button>
     <button>Actualités</button>
