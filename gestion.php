@@ -55,8 +55,10 @@ if(!isset($_SESSION['user'])) {
     </section>
 </header>
 <main>
-
-
+    <h2>Pannel de <?php $_SESSION['user'] ?></h2>
+    <button>Tarifs légumes</button>
+    <button>Gestion factures</button>
+    <button>Actualités</button>
 </main>
 <footer>
     <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>
