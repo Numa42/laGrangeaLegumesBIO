@@ -1,4 +1,11 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include './vendor/autoload.php';
+
+// Obtenir l'instance de la base de données
+$produitDAO = new ProduitDAO(MaBD::getInstance());
 ?>
 <!DOCTYPE html>
 <html lang="fr">
