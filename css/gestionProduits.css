@@ -1,0 +1,17 @@
+#edit{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-image: url("../assets/image/icon/edit.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+#remove{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-image: url("../assets/image/icon/remove.svg");
+    background-position: center;
+    background-size: cover;
+}

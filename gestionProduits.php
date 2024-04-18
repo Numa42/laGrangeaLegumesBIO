@@ -7,6 +7,8 @@
     <title>La Grange à Légumes BIO</title>
     <link rel="icon" href="assets/image/icon.png">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/tarifs.css">
+    <link rel="stylesheet" href="css/gestionProduits.css">
 </head>
 <body>
 <header>
@@ -44,8 +46,20 @@
     </section>
 </header>
 <main>
-
-
+    <table>
+        <tr class="thead">
+            <td>Nom</td>
+            <td>Producteur</td>
+            <td>Prix</td>
+        </tr>
+        <?php
+        $produits = $produitDAO->getAll();
+        foreach (array_keys($produits) as $p){
+            $produit = new Produit($produits[$p]);
+            $produit->toPanelTable();
+        }
+        ?>
+    </table>
 </main>
 <footer>
     <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>

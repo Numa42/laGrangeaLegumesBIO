@@ -25,4 +25,20 @@ class Produit
             <td>".$this->prix.$this->unite."</td>
         </tr>";
     }
+
+    public function toPanelTable(){
+        # Fonction utilisée dans tarifs.php
+        $producteurDAO = new ProducteurDAO(MaBD::getInstance());
+        $str = $this->nom;
+        if ($this->type !== ""){
+            $str .= " (".$this->type.")";
+        }
+        echo "<tr>
+            <td>".$str."</td>
+            <td>".$producteurDAO->getOne($this->source)->nom."</td>
+            <td>".$this->prix.$this->unite."</td>
+            <td><button id='edit'></button></td>
+            <td><button id='remove'></button></td>
+        </tr>";
+    }
 }
