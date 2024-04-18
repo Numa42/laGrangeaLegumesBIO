@@ -37,8 +37,8 @@ class Produit
             <td>".$str."</td>
             <td>".$producteurDAO->getOne($this->source)->nom."</td>
             <td>".$this->prix.$this->unite."</td>
-            <td><button id='edit'></button></td>
-            <td><button id='remove'></button></td>
+            <td class='btn-content'><button id='edit'></button></td>
+            <td class='btn-content'><button id='remove'></button></td>
         </tr>";
     }
 }
