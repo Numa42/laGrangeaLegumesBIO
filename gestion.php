@@ -64,7 +64,7 @@ if(!isset($_SESSION['user'])) {
         </a>
         <a href="gestionFactures.php">
             <img src="assets/image/icon/facture.svg" height="60" width="60" />
-            <h3>Gestion factures</h3>
+            <h3>Gestiosdqfzeggzesgzgfsqezdesfgderzn factures</h3>
         </a>
         <a href="gestionClient.php">
             <img src="assets/image/icon/personCircle.svg" height="60" width="60" />
