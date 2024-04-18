@@ -58,10 +58,22 @@ if(!isset($_SESSION['user'])) {
 <main>
     <h2>Pannel de <?php echo $_SESSION['user'] ?></h2>
     <section id="pannel">
-        <button>Tarifs légumes</button>
-        <button>Gestion factures</button>
-        <button>Gestion clients</button>
-        <button>Actualités</button>
+        <a href="gestionProduits.php">
+            <img src="assets/image/icon/bakalegumes.svg" height="80" width="80" />
+            <h3>Gestion produits</h3>
+        </a>
+        <a href="gestionFactures.php">
+            <img src="assets/image/icon/facture.svg" height="80" width="80" />
+            <h3>Gestion factures</h3>
+        </a>
+        <a href="gestionClient.php">
+            <img src="assets/image/icon/personCircle.svg" height="80" width="80" />
+            <h3>Gestion clients</h3>
+        </a>
+        <a href="gestionActus.php">
+            <img src="assets/image/icon/actu.svg" height="80" width="80" />
+            <h3>Actualités</h3>
+        </a>
     </section>
 </main>
 <footer>
