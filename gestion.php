@@ -18,6 +18,7 @@ if(!isset($_SESSION['user'])) {
     <title>La Grange à Légumes BIO</title>
     <link rel="icon" href="assets/image/icon.png">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/gestion.css">
 </head>
 <body>
 <header>
