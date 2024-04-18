@@ -5,7 +5,7 @@ main{
 }
 
 #pannel{
-    width: 64%;
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,8 +15,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20vw;
-    height: 20vh;
+    justify-content: center;
+    width: 12vw;
+    height: 15vh;
     padding: 10px;
     background-color: #8fd71a;
     border-radius: 20px;
