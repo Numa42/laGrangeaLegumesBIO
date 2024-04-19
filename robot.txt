@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /gestion/
+Sitemap: https://www.lagrangealegumesbio.fr/sitemap.xml
