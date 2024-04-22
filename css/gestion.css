@@ -8,14 +8,14 @@ main{
     width: 80%;
 }
 
-.pannel2{
+.panel2{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 4vh;
 }
 
-.pannel2 a{
+.panel2 a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

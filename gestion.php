@@ -56,9 +56,9 @@ if(!isset($_SESSION['user'])) {
     </section>
 </header>
 <main>
-    <h2>Pannel de <?php echo $_SESSION['user'] ?></h2>
-    <section id="pannel">
-        <section class="pannel2">
+    <h2>Panel de <?php echo $_SESSION['user'] ?></h2>
+    <section id="panel">
+        <section class="panel2">
             <a href="gestionActus.php">
                 <img src="assets/image/icon/actu.svg" height="75" width="75" />
                 <h3>Gestion actualités</h3>
@@ -72,7 +72,7 @@ if(!isset($_SESSION['user'])) {
                 <h3>Gestion formules</h3>
             </a>
         </section>
-        <section class="pannel2">
+        <section class="panel2">
             <a href="gestionPartenaires.php">
                 <img src="assets/image/icon/partenaires.svg" height="75" width="75" />
                 <h3>Gestion partenaires</h3>
