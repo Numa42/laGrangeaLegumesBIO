@@ -4,14 +4,17 @@ main{
     align-items: center;
 }
 
-#pannel{
+#panel{
     width: 75%;
+}
+
+.pannel2{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#pannel a{
+.pannel2 a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
