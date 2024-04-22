@@ -60,29 +60,29 @@ if(!isset($_SESSION['user'])) {
     <section id="pannel">
         <section class="pannel2">
             <a href="gestionActus.php">
-                <img src="assets/image/icon/actu.svg" height="60" width="60" />
+                <img src="assets/image/icon/actu.svg" height="75" width="75" />
                 <h3>Gestion actualités</h3>
             </a>
             <a href="gestionProduits.php">
-                <img src="assets/image/icon/legumesBold.svg" height="60" width="60" />
+                <img src="assets/image/icon/legumesBold.svg" height="75" width="75" />
                 <h3>Gestion produits</h3>
             </a>
             <a href="gestionFormules.php">
-                <img src="assets/image/icon/bakalegumes.svg" height="60" width="60" />
+                <img src="assets/image/icon/bakalegumes.svg" height="75" width="75" />
                 <h3>Gestion formules</h3>
             </a>
         </section>
         <section class="pannel2">
             <a href="gestionPartenaires.php">
-                <img src="assets/image/icon/partenaire.svg" height="60" width="60" />
+                <img src="assets/image/icon/partenaires.svg" height="75" width="75" />
                 <h3>Gestion partenaires</h3>
             </a>
             <a href="gestionFactures.php">
-                <img src="assets/image/icon/facture.svg" height="60" width="60" />
+                <img src="assets/image/icon/facture.svg" height="75" width="75" />
                 <h3>Gestion factures</h3>
             </a>
             <a href="gestionClient.php">
-                <img src="assets/image/icon/personCircle.svg" height="60" width="60" />
+                <img src="assets/image/icon/personCircle.svg" height="75" width="75" />
                 <h3>Gestion clients</h3>
             </a>
         </section>

@@ -5,14 +5,14 @@ main{
 }
 
 #panel{
-    width: 75%;
+    width: 80%;
 }
 
 .pannel2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 4vh;
 }
 
 .pannel2 a{
