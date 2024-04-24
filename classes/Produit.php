@@ -36,12 +36,13 @@ class Produit
                 <input name='Code' type='text' value='$this->code' />
                 <input name='Nom' type='text' value='$this->nom' />
                 <input name='Type' type='text' value='$this->type' />
-                <input name='Fournisseur' type='text' value='$producteurDAO->getOne($this->source)->nom' />
+                <input name='Fournisseur' type='text' value='' />
                 <input name='Prix' type='text' value='$this->prix' />
                 <input name='Unité' type='text' value='$this->unite' />
             </section>
             <div class='btn-content'><input type='image' name='edit[]' src='../assets/images/icon/edit.svg'></div>
             <div class='btn-content'><input type='image' name='remove[]' src='../assets/images/icon/remove.svg'></div>
         </form>";
+//        $producteurDAO->getOne($this->source)->nom
     }
 }
