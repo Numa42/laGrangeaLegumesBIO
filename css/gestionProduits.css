@@ -5,17 +5,9 @@
 #edit{
     width: 30px;
     height: 30px;
-    border: none;
-    background-image: url("../assets/image/icon/edit.svg");
-    background-position: center;
-    background-size: cover;
 }
 
 #remove{
     width: 25px;
     height: 25px;
-    border: none;
-    background-image: url("../assets/image/icon/remove.svg");
-    background-position: center;
-    background-size: cover;
 }

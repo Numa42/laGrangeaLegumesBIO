@@ -63,7 +63,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         $produits = $produitDAO->getAll();
         foreach (array_keys($produits) as $p){
             $produit = new Produit($produits[$p]);
-            $produit->toPanelTable();
+            $produit->toForm();
         }
         ?>
     </table>
