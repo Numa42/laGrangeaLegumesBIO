@@ -52,12 +52,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
     </section>
 </header>
 <main>
-    <table>
-        <tr class="thead">
-            <td>Nom</td>
-            <td>Producteur</td>
-            <td>Prix</td>
-        </tr>
+    <section class="main">
         <?php
         $produits = $produitDAO->getAll();
         foreach (array_keys($produits) as $p){
@@ -65,7 +60,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
             $produit->toForm();
         }
         ?>
-    </table>
+    </section>
 </main>
 <footer>
     <p>&copy; 2024 La Grange à Légumes Bio. Tous droits réservés.</p>
