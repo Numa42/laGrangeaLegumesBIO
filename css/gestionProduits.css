@@ -13,9 +13,10 @@
 }
 
 .form p{
-    font-size: large;
+    width: 2vw;
+    font-size: medium;
     margin: 0;
-    padding-right: 1vw;
+    padding-right: 0.8vw;
 }
 
 input{
