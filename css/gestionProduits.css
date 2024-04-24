@@ -2,6 +2,10 @@
     padding: 0;
 }
 
+.text{
+    display: flex;
+}
+
 #edit{
     width: 30px;
     height: 30px;

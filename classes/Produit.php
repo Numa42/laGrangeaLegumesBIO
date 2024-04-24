@@ -32,7 +32,7 @@ class Produit
 
         echo "<form method='post'>
             <section class='text'>
-                <p>.$this->id.<p>
+                <p>$this->id<p>
                 <input name='Code' type='text' value='$this->code' />
                 <input name='Nom' type='text' value='$this->nom' />
                 <input name='Type' type='text' value='$this->type' />
@@ -40,7 +40,7 @@ class Produit
                 <input name='Prix' type='text' value='$this->prix' />
                 <input name='Unité' type='text' value='$this->unite' />
             </section>
-            <div class='btn-content'><input type='image' name='edit[]' src='../assets/images/icon/edit.svg'></div>
+            <div class='btn-content'><input type='image' name='edit[]' src='/assets/images/icon/edit.svg'></div>
             <div class='btn-content'><input type='image' name='remove[]' src='../assets/images/icon/remove.svg'></div>
         </form>";
 //        $producteurDAO->getOne($this->source)->nom
