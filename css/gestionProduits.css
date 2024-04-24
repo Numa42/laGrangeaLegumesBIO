@@ -1,9 +1,13 @@
+.main{
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
 .form{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
     display: flex;
     align-items: center;
 }
+
 .text{
     display: flex;
 }

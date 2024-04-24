@@ -1,8 +1,14 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 include './vendor/autoload.php';
+
+session_start();
+
+if(!isset($_SESSION['user'])) {
+    // Rediriger vers la page protégée
+    header("Location: connexion.php");
+    exit;
+}
 
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
@@ -54,6 +60,13 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
 <main>
     <section class="main">
         <?php
+        if (isset($_POST['edit'])) {
+            echo "<p>FEUR</p>";
+        }
+        if (isset($_POST['remove'])) {
+            echo "<p>COUBEH</p>";
+        }
+
         $produits = $produitDAO->getAll();
         foreach (array_keys($produits) as $p){
             $produit = new Produit($produits[$p]);
