@@ -30,8 +30,9 @@ class Produit
         # Fonction utilisée dans gestion.php
         $producteurDAO = new ProducteurDAO(MaBD::getInstance());
 
-        echo "<form method='post' class='form'>
-            <p>$this->id<p>
+        echo "<form method='post'>
+            <p class='form'>
+            <p>$this->id</p>
             <section class='text'>
                 <input name='Code' type='text' value='$this->code' />
                 <input name='Nom' type='text' value='$this->nom' />
@@ -42,6 +43,7 @@ class Produit
             </section>
             <input type='image' name='edit[]' class='btn-content' src='/assets/image/icon/edit.svg'>
             <input type='image' name='remove[]' class='btn-content' src='../assets/image/icon/remove.svg'>
+            </p>
         </form>";
 //        $producteurDAO->getOne($this->source)->nom
     }
