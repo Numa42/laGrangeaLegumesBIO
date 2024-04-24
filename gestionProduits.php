@@ -61,12 +61,27 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
     <section class="main">
         <?php
         if (isset($_POST['edit'])) {
-            echo "<p>FEUR</p>";
+//          new Produit();
+            echo "<p>".$_POST['Nom']."</p>";
+            echo "<p>".$_POST['Type']."</p>";
         }
         if (isset($_POST['remove'])) {
             echo "<p>COUBEH</p>";
         }
 
+        echo "<section class='form'>
+                    <p class='id'></p>
+                    <section class='text'>
+                        <p class='header'>Code balance<p/>
+                        <p class='header'>Nom<p/>
+                        <p class='header'>Type<p/>
+                        <p class='header'>Fournisseur<p/>
+                        <p class='header'>Prixr<p/>
+                        <p class='header'>Unité<p/>
+                    </section>
+                    <input type='image' name='edit[]' class='btn-content' src='/assets/image/icon/edit.svg'>
+                    <input type='image' name='remove[]' class='btn-content' src='../assets/image/icon/remove.svg'>
+                </section>";
         $produits = $produitDAO->getAll();
         foreach (array_keys($produits) as $p){
             $produit = new Produit($produits[$p]);

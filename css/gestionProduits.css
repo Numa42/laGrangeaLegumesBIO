@@ -12,14 +12,14 @@
     display: flex;
 }
 
-.form p{
+.form .id{
     width: 2vw;
     font-size: medium;
     margin: 0;
     padding-right: 0.8vw;
 }
 
-input{
+input, .header{
     padding: 0.6vh;
     width: 10vw;
 }

@@ -32,7 +32,7 @@ class Produit
 
         echo "<form method='post'>
                 <section class='form'>
-                    <p>$this->id</p>
+                    <p class='id'>$this->id</p>
                     <section class='text'>
                         <input name='Code' type='text' value='$this->code' />
                         <input name='Nom' type='text' value='$this->nom' />
@@ -46,5 +46,9 @@ class Produit
                 </section>
         </form>";
 //        $producteurDAO->getOne($this->source)->nom
+    }
+
+    public function getAll(){
+        return array($this->id, $this->code, $this->nom, $this->type, $this->source, $this->prix, $this->unite);
     }
 }
