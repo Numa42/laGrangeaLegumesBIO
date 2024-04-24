@@ -7,12 +7,13 @@
 }
 
 .form p{
+    padding: 0;
     padding-right: 1vw;
 }
 
 input{
-    padding: 1vh;
-    width: 12vw;
+    padding: 0.6vh;
+    width: 10vw;
 }
 
 .btn-content{
