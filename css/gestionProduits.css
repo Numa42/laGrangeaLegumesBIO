@@ -1,3 +1,7 @@
+.form{
+    display: flex;
+}
+
 .btn-content {
     padding: 0;
 }
