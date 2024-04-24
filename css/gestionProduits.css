@@ -1,16 +1,11 @@
 .form{
     display: flex;
 }
-
-.btn-content {
-    padding: 0;
-}
-
 .text{
     display: flex;
 }
 
-#edit, #remove{
+.btn-content{
     width: 30px;
     height: 30px;
 }
