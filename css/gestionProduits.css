@@ -10,12 +10,7 @@
     display: flex;
 }
 
-#edit{
+#edit, #remove{
     width: 30px;
     height: 30px;
-}
-
-#remove{
-    width: 25px;
-    height: 25px;
 }

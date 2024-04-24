@@ -40,8 +40,8 @@ class Produit
                 <input name='Prix' type='text' value='$this->prix' />
                 <input name='Unité' type='text' value='$this->unite' />
             </section>
-            <div class='btn-content'><input type='image' name='edit[]' src='/assets/image/icon/edit.svg'></div>
-            <div class='btn-content'><input type='image' name='remove[]' src='../assets/image/icon/remove.svg'></div>
+            <input type='image' name='edit[]' class='btn-content' src='/assets/image/icon/edit.svg'>
+            <input type='image' name='remove[]' class='btn-content' src='../assets/image/icon/remove.svg'>
         </form>";
 //        $producteurDAO->getOne($this->source)->nom
     }
