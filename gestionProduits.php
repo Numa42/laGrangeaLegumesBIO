@@ -14,7 +14,6 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
     <title>La Grange à Légumes BIO</title>
     <link rel="icon" href="assets/image/icon.png">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/tarifs.css">
     <link rel="stylesheet" href="css/gestionProduits.css">
 </head>
 <body>

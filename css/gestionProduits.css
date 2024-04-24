@@ -1,8 +1,19 @@
 .form{
     display: flex;
+    align-items: center;
 }
 .text{
     display: flex;
+}
+
+.form p{
+    padding-right: 1vw;
+}
+
+input{
+    padding: 1vh;
+    width: 15vw;
+    height: 3vh;
 }
 
 .btn-content{
