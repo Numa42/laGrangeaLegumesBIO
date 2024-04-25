@@ -10,6 +10,10 @@ if(!isset($_SESSION['user'])) {
     exit;
 }
 
+if (isset($_POST)) {
+    $_POST = array(); // Vide $_POST lorsqu'il est déjà défini
+}
+
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
 ?>
