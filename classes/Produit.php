@@ -32,7 +32,7 @@ class Produit
 
         echo "<form method='post'>
                 <section class='form'>
-                    <p class='id' name='id_produit'>$this->id</p>
+                    <input type='hidden' name='id_produit' value=$this->id>
                     <section class='text'>
                         <input name='Code' type='text' value='$this->code' />
                         <input name='Nom' type='text' value='$this->nom' />
