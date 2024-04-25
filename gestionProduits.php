@@ -69,7 +69,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         <?php
         if (isset($_POST['edit'])) {
             $array = array ();
-            $array["id_produit"] = $_POST['id'];
+            $array["id_produit"] = $_POST['id_produit'];
             $array["code_balance"] = $_POST['Code'];
             $array["nom_produit"] = $_POST['Nom'];
             $array["type_produit"] = $_POST['Type'];
