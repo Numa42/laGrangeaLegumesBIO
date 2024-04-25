@@ -25,12 +25,9 @@ class ProduitDAO extends DAO
 
     public function edit(Produit $obj): int
     {
-        foreach ($obj->getAll() as $valeur) {
-            echo "<p>".$valeur."/p>";
-        }
-//        $stmt = $this->pdo->prepare("UPDATE Produit SET code_balance=?, nom_produit=?, type_produit=?, source=?, prix=?, unite=? WHERE id_produit=?");
-//        return $stmt->execute(array($obj->getAll()));
-        return 0;
+        $array = $obj->getAll();
+        $stmt = $this->pdo->prepare("UPDATE Produit SET code_balance=?, nom_produit=?, type_produit=?, source=?, prix=?, unite=? WHERE id_produit=?");
+        return $stmt->execute($array);
     }
 
     public function delete(object $obj): int
