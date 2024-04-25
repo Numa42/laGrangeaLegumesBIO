@@ -35,7 +35,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         <img id="menuClose" src="assets/image/menuClose.png" onclick="toggleStatus()">
         <nav id="nav">
             <section id="menu0">
-                <a id="acceuil" href="index.html"><p class="pMenu">Acceuil</p></a>
+                <a id="acceuil" href="index.html"><p class="pMenu">Accueil</p></a>
             </section>
             <section id="menu1">
                 <p id="entreprise" class="pMenu">L'entreprise</p>
