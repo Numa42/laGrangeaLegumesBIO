@@ -10,9 +10,9 @@ if(!isset($_SESSION['user'])) {
     exit;
 }
 
-if (isset($_POST)) {
-    $_POST = array(); // Vide $_POST lorsqu'il est déjà défini
-}
+//if (isset($_POST)) {
+//    $_POST = array(); // Vide $_POST lorsqu'il est déjà défini
+//}
 
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
@@ -67,7 +67,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         if (isset($_POST['edit'])) {
             $array = array($_POST['id'], $_POST['Code'], $_POST['Nom'], $_POST['Type'],$_POST['Fournisseur'],$_POST['Prix'],$_POST['Unité']);
             $produit = new Produit($array);
-            $res = $produitDAO->save($produit);
+            $res = $produitDAO->edit($produit);
             echo "<p>".$res."</p>";
         }
         if (isset($_POST['remove'])) {

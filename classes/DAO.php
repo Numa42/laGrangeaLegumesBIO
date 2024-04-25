@@ -20,11 +20,6 @@ abstract class DAO
     // Méthode abstraite pour récupérer tous les objets dans une table
     abstract public function getAll(): array;
 
-    // Méthode abstraite pour sauvegarder l'objet $obj :
-    //     $obj->id == UNKNOWN_ID ==> INSERT
-    //     $obj->id != UNKNOWN_ID ==> UPDATE
-    abstract public function save(object $obj): int;
-
     // Méthode abstraite pour effacer l'objet $obj (DELETE)
     abstract public function delete(object $obj): int;
 
