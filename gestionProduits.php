@@ -62,8 +62,12 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         <?php
         if (isset($_POST['edit'])) {
 //          new Produit();
+            echo "<p>".$_POST['Code']."</p>";
             echo "<p>".$_POST['Nom']."</p>";
             echo "<p>".$_POST['Type']."</p>";
+            echo "<p>".$_POST['Fournisseur']."</p>";
+            echo "<p>".$_POST['Prix']."</p>";
+            echo "<p>".$_POST['Unité']."</p>";
         }
         if (isset($_POST['remove'])) {
             echo "<p>COUBEH</p>";
