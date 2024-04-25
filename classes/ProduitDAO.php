@@ -25,7 +25,7 @@ class ProduitDAO extends DAO
 
     public function edit(Produit $obj): int
     {
-        echo "<p>".$obj->getAll()."</p>";
+        echo "<p>".implode($obj->getAll())."</p>";
 //        $stmt = $this->pdo->prepare("UPDATE Produit SET code_balance=?, nom_produit=?, type_produit=?, source=?, prix=?, unite=? WHERE id_produit=?");
 //        return $stmt->execute(array($obj->getAll()));
     }
