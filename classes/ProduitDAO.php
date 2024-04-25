@@ -25,7 +25,7 @@ class ProduitDAO extends DAO
 
     public function save(object $obj): int
     {
-        $stmt = $this->pdo->query("UPDATE Produit SET code_balance=?, nom_produit=?, type_produit=?, source=?, prix=?, unite=? WHERE id_produit=?");
+        $stmt = $this->pdo->prepare("UPDATE Produit SET code_balance=?, nom_produit=?, type_produit=?, source=?, prix=?, unite=? WHERE id_produit=?");
         $res = $stmt->execute(array($obj->getAll()));
         return $res;
     }
