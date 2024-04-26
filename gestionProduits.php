@@ -65,7 +65,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
     </section>
 </header>
 <main>
-    <section class="main">
+    <section class="msg">
         <?php
         if (isset($_POST['edit'])) {
             $array = array ();
@@ -83,7 +83,10 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         if (isset($_POST['remove'])) {
             echo "<p>COUBEH</p>";
         }
-
+        ?>
+    </section>
+    <section class="main">
+        <?php
         echo "<section class='form'>
                     <p class='id'></p>
                     <section class='text'>

@@ -10,7 +10,7 @@ if(!isset($_SESSION['user'])) {
     exit;
 }
 
-?>vv
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

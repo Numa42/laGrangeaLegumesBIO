@@ -28,7 +28,7 @@ class ProduitDAO extends DAO
         $array = $obj->getAll();
         $stmt = $this->pdo->prepare("UPDATE Produit SET code_balance=?, nom_produit=?, type_produit=?, source=?, prix=?, unite=? WHERE id_produit=?");
 //        return $stmt->execute($array);
-        return "<p>".implode($array)." - ".$array[0]."</p>";
+        return implode($array)." - ".$array[0];
     }
 
     public function delete(object $obj): int
