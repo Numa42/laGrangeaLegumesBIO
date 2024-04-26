@@ -13,9 +13,9 @@ if(!isset($_SESSION['user'])) {
     exit;
 }
 
-//if (isset($_POST)) {
-//    $_POST = array(); // Vide $_POST lorsqu'il est déjà défini
-//}
+if (isset($_POST)) {
+    $_POST = array(); // Vide $_POST lorsqu'il est déjà défini
+}
 
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
@@ -91,7 +91,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
                         <p class='header'>Nom<p/>
                         <p class='header'>Type<p/>
                         <p class='header'>Fournisseur<p/>
-                        <p class='header'>Prixr<p/>
+                        <p class='header'>Prix<p/>
                         <p class='header'>Unité<p/>
                     </section>
                     <input type='image' name='edit[]' class='btn-content' src='/assets/image/icon/edit.svg'>
