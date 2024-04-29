@@ -13,14 +13,6 @@ if(!isset($_SESSION['user'])) {
     exit;
 }
 
-if(isset($_POST)){
-    $str = "";
-    foreach($_POST as $p){
-        $str .= $p;
-    }
-    echo "<pre>".$str."</pre>";
-}
-
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
 ?>
@@ -71,7 +63,23 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
 <main>
     <section class="msg">
         <?php
+        if (isset($_POST['edit'])) {
+            $array = array ();
+            $array["id_produit"] = $_POST['id_produit'];
+            $array["code_balance"] = $_POST['Code'];
+            $array["nom_produit"] = $_POST['Nom'];
+            $array["type_produit"] = $_POST['Type'];
+            $array["source"] = $_POST['Fournisseur'];
+            $array["prix"] = $_POST['Prix'];
+            $array["unite"] = $_POST['Unité'];
+            $produit = new Produit($array);
 
+            $res = $produitDAO->edit($produit);
+            echo "<alt>".$array["nom_produit"]." a été édité</alt>";
+        }
+        if (isset($_POST['remove'])) {
+            ;
+        }
         ?>
     </section>
     <section class="main">
@@ -95,23 +103,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
             $produit = new Produit($produits[$p]);
             $produit->toForm();
         }
-        if (isset($_POST['edit'])) {
-            $array = array ();
-            $array["id_produit"] = $_POST['id_produit'];
-            $array["code_balance"] = $_POST['Code'];
-            $array["nom_produit"] = $_POST['Nom'];
-            $array["type_produit"] = $_POST['Type'];
-            $array["source"] = $_POST['Fournisseur'];
-            $array["prix"] = $_POST['Prix'];
-            $array["unite"] = $_POST['Unité'];
-            $produit = new Produit($array);
 
-            $res = $produitDAO->edit($produit);
-            echo "<pre>".$res."</pre>";
-        }
-        if (isset($_POST['remove'])) {
-            echo "<p>COUBEH</p>";
-        }
         ?>
     </section>
 </main>
