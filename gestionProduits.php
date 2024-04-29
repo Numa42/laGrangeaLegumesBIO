@@ -16,7 +16,7 @@ if(!isset($_SESSION['user'])) {
 if(isset($_POST)){
     $str = "";
     foreach($_POST as $p){
-        $str += $p;
+        $str .= $p;
     }
     echo "<pre>".$str."</pre>";
 }
