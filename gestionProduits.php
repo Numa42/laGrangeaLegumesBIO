@@ -78,7 +78,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
             $array["id_produit"] = $_POST['id_produit'];
             $produit = new Produit($array);
             $res = $produitDAO->edit($produit);
-            echo "<p>".$res."</p>";
+            echo "<pre>".$res."</pre>";
         }
         if (isset($_POST['remove'])) {
             echo "<p>COUBEH</p>";
