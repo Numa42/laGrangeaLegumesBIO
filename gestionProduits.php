@@ -13,6 +13,14 @@ if(!isset($_SESSION['user'])) {
     exit;
 }
 
+if(isset($_POST)){
+    $str = "";
+    foreach($_POST as $p){
+        $str += $p;
+    }
+    echo "<pre>".$str."</pre>";
+}
+
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
 ?>
@@ -82,7 +90,8 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
                     <input type='image' name='remove[]' class='btn-content' src='/assets/image/icon/remove.svg'>
                 </section>";
         $produits = $produitDAO->getAll();
-        foreach (array_keys($produits) as $p){
+        echo "<pre>oui</pre>";
+        foreach ($produits as $p){
             $produit = new Produit($produits[$p]);
             $produit->toForm();
         }
