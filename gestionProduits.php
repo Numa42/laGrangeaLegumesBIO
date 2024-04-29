@@ -91,7 +91,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
                 </section>";
         $produits = $produitDAO->getAll();
         echo "<pre>oui</pre>";
-        foreach ($produits as $p){
+        foreach (array_keys($produits) as $p){
             $produit = new Produit($produits[$p]);
             $produit->toForm();
         }
