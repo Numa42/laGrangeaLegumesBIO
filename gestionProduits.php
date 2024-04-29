@@ -86,7 +86,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
         <?php
         echo "<section class='form'>
                     <p class='id'></p>
-                    <section class='text'>
+                    <section class='text textHeader'>
                         <p class='header'>Code balance<p/>
                         <p class='header'>Nom<p/>
                         <p class='header'>Type<p/>
@@ -98,7 +98,6 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
                     <input type='image' name='remove[]' class='btn-content' src='/assets/image/icon/remove.svg'>
                 </section>";
         $produits = $produitDAO->getAll();
-        echo "<pre>oui</pre>";
         foreach (array_keys($produits) as $p){
             $produit = new Produit($produits[$p]);
             $produit->toForm();

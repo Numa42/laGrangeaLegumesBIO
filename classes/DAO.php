@@ -19,8 +19,4 @@ abstract class DAO
 
     // Méthode abstraite pour récupérer tous les objets dans une table
     abstract public function getAll(): array;
-
-    // Méthode abstraite pour effacer l'objet $obj (DELETE)
-    abstract public function delete(object $obj): int;
-
 }
