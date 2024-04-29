@@ -13,10 +13,6 @@ if(!isset($_SESSION['user'])) {
     exit;
 }
 
-if (isset($_POST)) {
-    $_POST = array(); // Vide $_POST lorsqu'il est déjà défini
-}
-
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
 ?>
@@ -67,22 +63,7 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
 <main>
     <section class="msg">
         <?php
-        if (isset($_POST['edit'])) {
-            $array = array ();
-            $array["code_balance"] = $_POST['Code'];
-            $array["nom_produit"] = $_POST['Nom'];
-            $array["type_produit"] = $_POST['Type'];
-            $array["source"] = $_POST['Fournisseur'];
-            $array["prix"] = $_POST['Prix'];
-            $array["unite"] = $_POST['Unité'];
-            $array["id_produit"] = $_POST['id_produit'];
-            $produit = new Produit($array);
-            $res = $produitDAO->edit($produit);
-            echo "<pre>".$res."</pre>";
-        }
-        if (isset($_POST['remove'])) {
-            echo "<p>COUBEH</p>";
-        }
+
         ?>
     </section>
     <section class="main">
@@ -98,12 +79,28 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
                         <p class='header'>Unité<p/>
                     </section>
                     <input type='image' name='edit[]' class='btn-content' src='/assets/image/icon/edit.svg'>
-                    <input type='image' name='remove[]' class='btn-content' src='../assets/image/icon/remove.svg'>
+                    <input type='image' name='remove[]' class='btn-content' src='/assets/image/icon/remove.svg'>
                 </section>";
         $produits = $produitDAO->getAll();
         foreach (array_keys($produits) as $p){
             $produit = new Produit($produits[$p]);
             $produit->toForm();
+        }
+        if (isset($_POST['edit'])) {
+            $array = array ();
+            $array["code_balance"] = $_POST['Code'];
+            $array["nom_produit"] = $_POST['Nom'];
+            $array["type_produit"] = $_POST['Type'];
+            $array["source"] = $_POST['Fournisseur'];
+            $array["prix"] = $_POST['Prix'];
+            $array["unite"] = $_POST['Unité'];
+            $array["id_produit"] = $_POST['id_produit'];
+            $produit = new Produit($array);
+            $res = $produitDAO->edit($produit);
+            echo "<pre>".$res."</pre>";
+        }
+        if (isset($_POST['remove'])) {
+            echo "<p>COUBEH</p>";
         }
         ?>
     </section>
