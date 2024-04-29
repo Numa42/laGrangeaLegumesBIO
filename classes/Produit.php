@@ -49,6 +49,6 @@ class Produit
     }
 
     public function getAll(){
-        return array($this->id, $this->code, $this->nom, $this->type, $this->source, $this->prix, $this->unite);
+        return array($this->code, $this->nom, $this->type, $this->source, $this->prix, $this->unite, $this->id);
     }
 }
