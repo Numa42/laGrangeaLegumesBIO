@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+#formHead{
+    padding:0;
+}
+
 .text{
     display: flex;
 }

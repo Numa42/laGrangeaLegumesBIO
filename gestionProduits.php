@@ -32,7 +32,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
     <link rel="stylesheet" href="css/gestionProduits.css">
     <script>
         function confirmerAction(id_Produit) {
-            if (confirm("Êtes-vous sûr de vouloir effectuer cette action ?")) {
+            if (confirm("Êtes-vous sûr de vouloir supprimer ce produit ?")) {
                 // Si l'utilisateur confirme, inclure les données du form dans l'url puis exécuter le code PHP
                 window.location.href = "gestionProduits.php?action=executer&id=" + id_Produit; // Rediriger vers votre_page.php avec un paramètre d'action
             } else {
@@ -101,8 +101,24 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
         ?>
     </section>
     <section class="main">
+        <form method='post'>
+            <section class='form'>
+                <p>Ajouter un produit :</p>
+                <section class="add">
+                    <section class='text'>
+                        <input name='Code' type='text' placeholder="Code balance" />
+                        <input name='Nom' type='text' placeholder="Nom" />
+                        <input name='Type' type='text' placeholder="Type" />
+                        <input name='Fournisseur' type='text' placeholder="Fournisseur" />
+                        <input name='Prix' type='text' placeholder="Prix" />
+                        <input name='Unité' type='text' placeholder="Unité" />
+                    </section>
+                    <input type='image' name='add[]' class='btn-content' src='/assets/image/icon/add.svg'>
+                </section>
+            </section>
+        </form>
         <?php
-        echo "<section class='form'>
+        echo "<section id='formHead' class='form'>
                     <p class='id'></p>
                     <section class='text textHeader'>
                         <p class='header'>Code balance<p/>
@@ -112,8 +128,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
                         <p class='header'>Prix<p/>
                         <p class='header'>Unité<p/>
                     </section>
-                    <input type='image' name='edit[]' class='btn-content' src='/assets/image/icon/edit.svg'>
-                    <input type='image' name='remove[]' class='btn-content' src='/assets/image/icon/remove.svg'>
                 </section>";
         $produits = $produitDAO->getAll();
         foreach (array_keys($produits) as $p){
