@@ -117,12 +117,12 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
         </form>
         <section id='formHead' class='form'>
             <section class='text textHeader'>
-                <p class='header'>Code balance<p/>
-                <p class='header'>Nom<p/>
-                <p class='header'>Type<p/>
-                <p class='header'>Fournisseur<p/>
-                <p class='header'>Prix<p/>
-                <p class='header'>Unité<p/>
+                <p class='header'>Code balance</p>
+                <p class='header'>Nom</p>
+                <p class='header'>Type</p>
+                <p class='header'>Fournisseur</p>
+                <p class='header'>Prix</p>
+                <p class='header'>Unité</p>
             </section>
         </section>
         <?php
