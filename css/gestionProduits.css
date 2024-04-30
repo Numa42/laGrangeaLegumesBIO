@@ -15,19 +15,11 @@
     align-items: center;
 }
 
-#formHead{
-    padding:0;
-}
-
-#formHead p{
-
-}
-
 input, .header{
     margin: 0;
     padding: 0.6vh;
     padding-bottom: 1px;
-    width: 12px;
+    width: 12vw;
 }
 
 .text{
