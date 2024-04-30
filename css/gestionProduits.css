@@ -16,14 +16,18 @@
 }
 
 #formHead{
+    background-color: #854f00;
     padding:0;
+    margin-right: 3.6vw;
     width: 100%
 }
 
 #formHead p{
+    color: white;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 4px;
+    width: 100%
 }
 
 .text{
@@ -45,7 +49,7 @@
 
 .textHeader{
     padding: 0;
-    margin-right: 10vw;
+    margin-right: 4vw;
     font-size: large;
 }
 
