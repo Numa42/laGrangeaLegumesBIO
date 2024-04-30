@@ -19,6 +19,10 @@
     padding:0;
 }
 
+#formHead p{
+    padding-bottom: 1px;
+}
+
 .text{
     display: flex;
 }
