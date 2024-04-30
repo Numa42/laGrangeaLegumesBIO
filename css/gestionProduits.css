@@ -10,6 +10,12 @@
     padding-bottom: 6vh;
 }
 
+#addP{
+    font-size: large;
+    margin-bottom: 5px;
+
+}
+
 .form{
     display: flex;
     align-items: center;
@@ -18,6 +24,8 @@
 #formHead{
     background-color: #854f00;
     padding:0;
+    padding-top: 2px;
+    padding-bottom: 2px;
     margin-top: 30px;
     margin-bottom: 5px;
     margin-right: 3.6vw;
@@ -42,7 +50,6 @@
 
 .form .id{
     width: 2vw;
-    font-size: medium;
     margin: 0;
     padding-right: 0.8vw;
 }

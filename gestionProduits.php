@@ -91,7 +91,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
             $produit = new Produit($array);
 
             $res = $produitDAO->edit($produit);
-            echo "<p class='logMsg'>".$array["nom_produit"]." a été édité</p>";
+            echo "<p class='logMsg'>".$array["nom_produit"]." a bien été édité</p>";
         }
         if (isset($_POST['remove'])) {
 
@@ -102,7 +102,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
     </section>
     <section class="main">
         <form method='post'>
-            <p>Ajouter un produit :</p>
+            <p id="addP">Ajouter un produit :</p>
             <section class='form'>
                 <section class='text'>
                     <input name='Code' type='text' placeholder="Code balance" />
