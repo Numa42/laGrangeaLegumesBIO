@@ -17,7 +17,7 @@ if(!isset($_SESSION['user'])) {
 $produitDAO = new ProduitDAO(MaBD::getInstance());
 
 if (isset($_GET['action']) && $_GET['action'] == 'executer'){
-    $produitDAO->delete($_GET['id']);
+    $produitDAO->delete(intval($_GET['id']));
     header("Location: gestionProduits.php");
     exit;
 }
