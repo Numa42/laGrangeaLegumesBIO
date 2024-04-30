@@ -41,8 +41,9 @@ class ProduitDAO extends DAO
 
     public function delete(int $id): int
     {
+        $array = array($id);
         $stmt = $this->pdo->prepare("DELETE FROM `Produit` WHERE id_produit=?");
-        $stmt->execute($id);
+        $stmt->execute($array);
         return -1;
     }
 }
