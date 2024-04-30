@@ -20,10 +20,6 @@
     width: 100%
 }
 
-#formHead .form{
-    justify-content: space-between;
-}
-
 #formHead p{
     margin: 0;
     padding-top: 20px;
@@ -32,6 +28,12 @@
 
 .text{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text input{
+    width: 100%;
 }
 
 .form .id{
