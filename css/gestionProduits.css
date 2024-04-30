@@ -17,13 +17,17 @@
 
 #formHead{
     padding:0;
+    width: 100%
+}
+
+#formHead .form{
+    justify-content: space-between;
 }
 
 #formHead p{
     margin: 0;
     padding-top: 20px;
     padding-bottom: 4px;
-    width: 100%;
 }
 
 .text{
