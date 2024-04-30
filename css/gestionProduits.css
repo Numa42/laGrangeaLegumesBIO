@@ -20,7 +20,14 @@
 }
 
 #formHead p{
+
+}
+
+input, .header{
+    margin: 0;
+    padding: 0.6vh;
     padding-bottom: 1px;
+    width: 12px;
 }
 
 .text{
@@ -32,11 +39,6 @@
     font-size: medium;
     margin: 0;
     padding-right: 0.8vw;
-}
-
-input, .header{
-    padding: 0.6vh;
-    width: 10vw;
 }
 
 .textHeader{
