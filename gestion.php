@@ -59,9 +59,9 @@ if(!isset($_SESSION['user'])) {
     <h2>Panel de <?php echo $_SESSION['user'] ?></h2>
     <section id="panel">
         <section class="panel2">
-            <a href="gestionActus.php">
+            <a href="gestionAccueil.php">
                 <img src="assets/image/icon/actu.svg" height="75" width="75" />
-                <h3>Gestion actualités</h3>
+                <h3>Gestion accueil</h3>
             </a>
             <a href="gestionProduits.php">
                 <img src="assets/image/icon/legumesBold.svg" height="75" width="75" />

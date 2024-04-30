@@ -15,6 +15,12 @@ if(!isset($_SESSION['user'])) {
 
 // Obtenir l'instance de la base de données
 $produitDAO = new ProduitDAO(MaBD::getInstance());
+
+if (isset($_GET['action']) && $_GET['action'] == 'executer'){
+    $produitDAO->delete($_GET['id']);
+    header("Location: gestionProduits.php");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -75,10 +81,12 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
             $produit = new Produit($array);
 
             $res = $produitDAO->edit($produit);
-            echo "<alt>".$array["nom_produit"]." a été édité</alt>";
+            echo "<p class='logMsg'>".$array["nom_produit"]." a été édité</p>";
         }
         if (isset($_POST['remove'])) {
-            ;
+
+            // Déclencher la fonction JavaScript depuis PHP
+            echo "<script>confirmerAction(".$_POST['id_produit'].");</script>";
         }
         ?>
     </section>
@@ -112,4 +120,14 @@ $produitDAO = new ProduitDAO(MaBD::getInstance());
 </footer>
 </body>
 <script src="js/base.js"></script>
+<script>
+    function confirmerAction(id_Produit) {
+        if (confirm("Êtes-vous sûr de vouloir effectuer cette action ?")) {
+            // Si l'utilisateur confirme, inclure les données du form dans l'url puis exécuter le code PHP
+            window.location.href = "votre_page.php?action=executer&id=" + id_Produit; // Rediriger vers votre_page.php avec un paramètre d'action
+        } else {
+            // Si l'utilisateur annule, ne rien faire
+        }
+    }
+</script>
 </html>

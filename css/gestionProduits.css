@@ -1,5 +1,12 @@
+.logMsg{
+    color: white;
+    background-color: #2db456;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
 .main{
-    padding-top: 6vh;
+    padding-top: 1vh;
     padding-bottom: 6vh;
 }
 
