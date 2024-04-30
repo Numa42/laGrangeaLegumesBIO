@@ -21,13 +21,9 @@
 
 #formHead p{
     margin: 0;
-    padding: 0.6vh;
+    padding-top: 6px;
     padding-bottom: 1px;
     width: 11.5vw;
-}
-
-input, .header{
-
 }
 
 .text{
