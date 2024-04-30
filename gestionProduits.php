@@ -102,17 +102,15 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
     </section>
     <section class="main">
         <form method='post'>
+            <p>Ajouter un produit :</p>
             <section class='form'>
-                <p>Ajouter un produit :</p>
-                <section class="add">
-                    <section class='text'>
-                        <input name='Code' type='text' placeholder="Code balance" />
-                        <input name='Nom' type='text' placeholder="Nom" />
-                        <input name='Type' type='text' placeholder="Type" />
-                        <input name='Fournisseur' type='text' placeholder="Fournisseur" />
-                        <input name='Prix' type='text' placeholder="Prix" />
-                        <input name='Unité' type='text' placeholder="Unité" />
-                    </section>
+                <section class='text'>
+                    <input name='Code' type='text' placeholder="Code balance" />
+                    <input name='Nom' type='text' placeholder="Nom" />
+                    <input name='Type' type='text' placeholder="Type" />
+                    <input name='Fournisseur' type='text' placeholder="Fournisseur" />
+                    <input name='Prix' type='text' placeholder="Prix" />
+                    <input name='Unité' type='text' placeholder="Unité" />
                     <input type='image' name='add[]' class='btn-content' src='/assets/image/icon/add.svg'>
                 </section>
             </section>
