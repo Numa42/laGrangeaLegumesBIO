@@ -34,7 +34,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
         function confirmerAction(id_Produit) {
             if (confirm("Êtes-vous sûr de vouloir effectuer cette action ?")) {
                 // Si l'utilisateur confirme, inclure les données du form dans l'url puis exécuter le code PHP
-                window.location.href = "votre_page.php?action=executer&id=" + id_Produit; // Rediriger vers votre_page.php avec un paramètre d'action
+                window.location.href = "gestionProduits.php?action=executer&id=" + id_Produit; // Rediriger vers votre_page.php avec un paramètre d'action
             } else {
                 // Si l'utilisateur annule, ne rien faire
             }
