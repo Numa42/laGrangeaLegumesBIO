@@ -15,11 +15,19 @@
     align-items: center;
 }
 
-input, .header{
+#formHead{
+    padding:0;
+}
+
+#formHead p{
     margin: 0;
     padding: 0.6vh;
     padding-bottom: 1px;
-    width: 12vw;
+    width: 11.5vw;
+}
+
+input, .header{
+
 }
 
 .text{
