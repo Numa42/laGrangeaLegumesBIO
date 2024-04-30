@@ -117,7 +117,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
         </form>
         <?php
         echo "<section id='formHead' class='form'>
-                    <p class='id'></p>
                     <section class='text textHeader'>
                         <p class='header'>Code balance<p/>
                         <p class='header'>Nom<p/>
