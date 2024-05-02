@@ -1,3 +1,7 @@
+#panel{
+    text-decoration: none;
+}
+
 .logMsg{
     color: white;
     background-color: #2db456;
