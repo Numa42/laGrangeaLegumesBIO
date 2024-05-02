@@ -30,7 +30,7 @@ class ProduitDAO extends DAO
         echo "<p>".implode($array)."</p>";
         $stmt = $this->pdo->prepare("INSERT INTO `Produit`(`code_balance`, `nom_produit`, `type_produit`, `source`, `prix`, `unite`) VALUES (?,?,?,?,?,?)");
         $stmt->execute($array);
-        return -1;
+        return $stmt;
     }
 
     public function edit(Produit $obj): string
