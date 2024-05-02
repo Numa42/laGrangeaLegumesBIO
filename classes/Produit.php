@@ -37,7 +37,7 @@ class Produit
                         <input name='Code' type='text' value='$this->code' />
                         <input name='Nom' type='text' value='$this->nom' />
                         <input name='Type' type='text' value='$this->type' />
-                        <input name='Fournisseur' type='text' value='' />
+                        <input name='Fournisseur' type='text' value='$producteurDAO->getOne($this->source)->nom' />
                         <input name='Prix' type='text' value='$this->prix' />
                         <input name='Unité' type='text' value='$this->unite' />
                     </section>
