@@ -73,7 +73,7 @@ $compteDAO = new CompteDAO(MaBD::getInstance());
 
                 if ($compte!==null){
                     $_SESSION['user'] = $login; // Stocker l'identifiant de l'utilisateur dans la session
-                    header("Location: gestion.php");
+                    header("Location: panel.php");
                     exit;
                 }else{
                     echo "<p class='erreur'>Identifiants ou mot de passe incorrects</p>";

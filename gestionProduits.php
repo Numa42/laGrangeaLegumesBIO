@@ -57,20 +57,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
                 <a id="acceuil" href="index.html"><p class="pMenu">Accueil</p></a>
             </section>
             <section id="menu1">
-                <p id="entreprise" class="pMenu">L'entreprise</p>
-                <ul id="menuEntreprise" class="menu">
-                    <a href="presentation.html"><li>Présentation</li></a>
-                    <a href="partenaires.html"><li>Partenaires</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                </ul>
-            </section>
-            <section id="menu2">
-                <p id="vente" class="pMenu">Paniers</p>
-                <ul id="menuVente" class="menu">
-                    <a href="formules.html"><li>Formules</li></a>
-                    <a href="conditionsVente.html"><li>Conditions de ventes</li></a>
-                    <a href="tarifs.php"><li>Tarifs légumes</li></a>
-                </ul>
+                <a id="panel" href="panel.php"><p class="pMenu">Panel</p></a>
             </section>
         </nav>
         <img src="assets/image/logoAB.jpg" id="ab">

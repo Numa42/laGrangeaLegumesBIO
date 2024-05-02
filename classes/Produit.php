@@ -27,7 +27,7 @@ class Produit
     }
 
     public function toForm(){
-        # Fonction utilisée dans gestion.php
+        # Fonction utilisée dans panel.php
         $producteurDAO = new ProducteurDAO(MaBD::getInstance());
 
         echo "<form method='post'>
