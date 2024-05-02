@@ -26,6 +26,11 @@ class Produit
         </tr>";
     }
 
+    public function toList(){
+        # Fonction utilisée dans gestionFormules.php
+        echo "<li><input class='remove' type='image' src='assets\image\icon\remove.svg'><p>".$this->nom."</p></li>";
+    }
+
     public function toForm(){
         # Fonction utilisée dans panel.php
         $producteurDAO = new ProducteurDAO(MaBD::getInstance());

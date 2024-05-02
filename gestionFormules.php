@@ -1,4 +1,22 @@
-<?php ?>
+<?php
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
+    include './vendor/autoload.php';
+
+    session_start();
+
+    if(!isset($_SESSION['user'])) {
+        // Rediriger vers la page protégée
+        header("Location: connexion.php");
+        exit;
+    }
+
+    // Obtenir l'instance de la base de données
+    $formuleDAO = new FormuleDAO(MaBD::getInstance());
+    $produitDAO = new ProduitDAO(MaBD::getInstance());
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -37,6 +55,16 @@
             <section class="formule" id="ptit">
                 <h3>P'TIT</h3>
                 <ul class="ptit">
+                    <?php
+                    $array = $formuleDAO->getAll();
+                    for ($i=0; $i>lenght($array); $i++){
+                        $formule = new Formule($array[$i]);
+                        if ($formule->num === 0){
+                            $produit = $produitDAO->getOne($formule->produit);
+                            $produit->toList();
+                        }
+                    }
+                    ?>
                 </ul>
                 <section class="add">
                     <input name="produit" class="textArea" type="text">
@@ -46,6 +74,16 @@
             <section class="formule" id="moyen">
                 <h3>MOYEN</h3>
                 <ul class="moyen">
+                    <?php
+                    $array = $formuleDAO->getAll();
+                    for ($i=0; $i>lenght($array); $i++){
+                        $formule = new Formule($array[$i]);
+                        if ($formule->num === 1){
+                            $produit = $produitDAO->getOne($formule->produit);
+                            $produit->toList();
+                        }
+                    }
+                    ?>
                 </ul>
                 <section class="add">
                     <input name="produit" class="textArea" type="text">
@@ -55,8 +93,16 @@
             <section class="formule" id="grand">
                 <h3>GRAND</h3>
                 <ul class="grand">
-                    <li><input class="remove" type="image" src="assets\image\icon\remove.svg"><p>Tomate cerise</p></li>
-                    <li><input class="remove" type="image" src="assets\image\icon\remove.svg"><p>Pastèque</p></li>
+                    <?php
+                        $array = $formuleDAO->getAll();
+                        for ($i=0; $i>lenght($array); $i++){
+                            $formule = new Formule($array[$i]);
+                            if ($formule->num === 2){
+                                $produit = $produitDAO->getOne($formule->produit);
+                                $produit->toList();
+                            }
+                        }
+                    ?>
                 </ul>
                 <section class="add">
                     <input name="produit" class="textArea" type="text">
