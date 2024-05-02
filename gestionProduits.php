@@ -98,6 +98,23 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
             // Déclencher la fonction JavaScript depuis PHP
             echo "<script>confirmerAction(".$_POST['id_produit'].");</script>";
         }
+
+        if (isset($_POST['add'])) {
+
+            // Déclencher la fonction JavaScript depuis PHP
+            $array = array ();
+            $array["id_produit"] = $_POST['id_produit'];
+            $array["code_balance"] = $_POST['Code'];
+            $array["nom_produit"] = $_POST['Nom'];
+            $array["type_produit"] = $_POST['Type'];
+            $array["source"] = $_POST['Fournisseur'];
+            $array["prix"] = $_POST['Prix'];
+            $array["unite"] = $_POST['Unité'];
+            $produit = new Produit($array);
+
+            $res = $produitDAO->insert($produit);
+            echo "<p class='logMsg'>".$array["nom_produit"]." a bien été ajouté</p>";
+        }
         ?>
     </section>
     <section class="main">
