@@ -26,7 +26,7 @@ class ProduitDAO extends DAO
     public function insert(Produit $obj): int
     {
         $array = $obj->getAll();
-        $stmt = $this->pdo->prepare("INSERT INTO `Produit`(`id_produit`, `code_balance`, `nom_produit`, `type_produit`, `source`, `prix`, `unite`) VALUES (?,?,?,?,?,?,?)");
+        $stmt = $this->pdo->prepare("INSERT INTO `Produit`(`code_balance`, `nom_produit`, `type_produit`, `source`, `prix`, `unite`) VALUES (?,?,?,?,?,?)");
         $stmt->execute($array);
         return -1;
     }

@@ -103,7 +103,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'executer'){
 
             // Déclencher la fonction JavaScript depuis PHP
             $array = array ();
-            $array["id_produit"] = $_POST['id_produit'];
             $array["code_balance"] = $_POST['Code'];
             $array["nom_produit"] = $_POST['Nom'];
             $array["type_produit"] = $_POST['Type'];
