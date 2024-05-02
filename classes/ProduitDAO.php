@@ -27,6 +27,7 @@ class ProduitDAO extends DAO
     {
         $array = $obj->getAll();
         unset($array['id_produit']);
+        echo "<p>".implode($array)."</p>";
         $stmt = $this->pdo->prepare("INSERT INTO `Produit`(`code_balance`, `nom_produit`, `type_produit`, `source`, `prix`, `unite`) VALUES (?,?,?,?,?,?)");
         $stmt->execute($array);
         return -1;
