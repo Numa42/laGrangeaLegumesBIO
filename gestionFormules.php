@@ -57,7 +57,7 @@
                 <ul class="ptit">
                     <?php
                     $array = $formuleDAO->getAll();
-                    for ($i=0; $i>lenght($array); $i++){
+                    for ($i=0; $i>count($array); $i++){
                         $formule = new Formule($array[$i]);
                         if ($formule->num === 0){
                             $produit = $produitDAO->getOne($formule->produit);
