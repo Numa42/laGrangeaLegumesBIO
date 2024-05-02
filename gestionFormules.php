@@ -76,7 +76,7 @@
                 <ul class="moyen">
                     <?php
                     $array = $formuleDAO->getAll();
-                    for ($i=0; $i>lenght($array); $i++){
+                    for ($i=0; $i>count($array); $i++){
                         $formule = new Formule($array[$i]);
                         if ($formule->num === 1){
                             $produit = $produitDAO->getOne($formule->produit);
@@ -95,7 +95,7 @@
                 <ul class="grand">
                     <?php
                         $array = $formuleDAO->getAll();
-                        for ($i=0; $i>lenght($array); $i++){
+                        for ($i=0; $i>count($array); $i++){
                             $formule = new Formule($array[$i]);
                             if ($formule->num === 2){
                                 $produit = $produitDAO->getOne($formule->produit);
